@@ -1,8 +1,12 @@
 # ecpay-node
 
-Ecpay nodejs example.
+A wrapper for ecpay in nodejs.
 
-Use [allpay](https://www.npmjs.com/package/allpay) library.
+Depend on [allpay](https://www.npmjs.com/package/allpay) package library.
+
+# Usage
+
+    npm install ecpay --save
 
 # Development
 
