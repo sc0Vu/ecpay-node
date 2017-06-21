@@ -1,0 +1,29 @@
+{
+  "name": "ecpay-node",
+  "version": "1.0.0",
+  "description": "ecpay nodejs example",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc0Vu/ecpay-node.git"
+  },
+  "keywords": [
+    "ecpay"
+  ],
+  "author": "sc0Vu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sc0Vu/ecpay-node/issues"
+  },
+  "homepage": "https://github.com/sc0Vu/ecpay-node#readme",
+  "dependencies": {
+    "allpay": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
