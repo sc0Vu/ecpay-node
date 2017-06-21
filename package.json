@@ -1,5 +1,5 @@
 {
-  "name": "ecpay-node",
+  "name": "ecpay",
   "version": "1.0.0",
   "description": "A wrapper for ecpay in nodejs.",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "keywords": [
     "ecpay"
   ],
-  "author": "sc0Vu",
+  "author": "sc0Vu <alk03073135@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sc0Vu/ecpay-node/issues"
