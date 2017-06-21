@@ -1,7 +1,7 @@
 {
   "name": "ecpay-node",
   "version": "1.0.0",
-  "description": "ecpay nodejs example",
+  "description": "A wrapper for ecpay in nodejs.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
