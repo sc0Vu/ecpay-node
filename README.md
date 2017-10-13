@@ -11,15 +11,53 @@ Depend on [allpay](https://www.npmjs.com/package/allpay) package library.
 
 # Usage
 
-    npm install ecpay --save
+```
+npm install ecpay --save
+
+const Ecpay = require('ecpay')
+
+const PaymentService = new Ecpay({
+  merchantID: "2000214",
+  hashKey: "5294y06JbISpM5x9",
+  hashIV: "v77hoKGq4kWxNNIS",
+  mode: "production"
+})
+```
+
+# Example
+
+Transaction
+
+```
+PaymentService.aioCheckOut({
+  MerchantTradeNo: "EC20171001000001",
+  MerchantTradeDate: "2017/10/01 00:00:00",
+  TotalAmount: 199,
+  TradeDesc: "HelloWorld",
+  Items: [{
+    name: "Cake",
+    price: 199,
+    currency: "NTD",
+    quantity: 1
+  }],
+  ReturnURL: "http://localhost/res",
+  ChoosePayment: "ALL"
+}, function(err, result) {
+  // Do something here...
+});
+```
 
 # Development
 
-    clone && npm install
+```
+clone && npm install
+```
 
 # Test
 
-    mocha
+```
+npm test
+```
 
 # License
 

@@ -1,25 +1,27 @@
-var expect = require("chai").expect;
-var Ecpay = require("../index");
-var ecpay;
+var tape = require('tape')
+var Ecpay = require("../index")
+var ecpay
 
-describe("Ecpay", function() {
-  it("should return correct production host", function() {
+tape("Test ecpay spec", (t) => {
+  t.test("should return correct production host", (st) => {
     ecpay = new Ecpay({
       merchantID: "2000214",
       hashKey: "5294y06JbISpM5x9",
       hashIV: "v77hoKGq4kWxNNIS",
       mode: "production"
-    });
-    expect(ecpay.getConfig().host).to.equal("payment.ecpay.com.tw");
-  });
+    })
+    st.equals(ecpay.getConfig().host, "payment.ecpay.com.tw")
+    st.end()
+  })
 
-  it("should return correct test host", function() {
+  t.test("should return correct test host", (st) => {
     ecpay = new Ecpay({
       merchantID: "2000214",
       hashKey: "5294y06JbISpM5x9",
       hashIV: "v77hoKGq4kWxNNIS",
       mode: "test"
-    });
-    expect(ecpay.getConfig().host).to.equal("payment-stage.ecpay.com.tw");
-  });
-});
+    })
+    st.equals(ecpay.getConfig().host, "payment-stage.ecpay.com.tw")
+    st.end()
+  })
+})
